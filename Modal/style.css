@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: url(https://plus.unsplash.com/premium_photo-1681400246385-8093434ca189?q=80&w=903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+/* Modal */
+
+.modal-box{
+    background-color: white;
+    padding: 2rem 0;
+    text-align: center;
+    width: 450px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h2{
+    margin-bottom: 1rem;
+}
+
+.open-modal-btn{
+    padding: 0.3rem;
+    background-color: cadetblue;
+    border:none;
+    cursor: pointer;
+    border-radius: 0.1rem;
+    box-shadow: 0 0 25px px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-overlay{
+    position: fixed;
+    background: rgba(187, 101, 101, 0.2);
+    inset:0;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+}
+
+.modal-container{
+    background-color: white;
+    padding: 2rem 0;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.modal-container button{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    font-size:1.2rem;
+    border:transparent;
+    padding:0.2rem;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover{
+    background-color: tomato;
+    border-radius: 0.2rem;
+}
+
+.modal-overlay-close{
+    visibility: visible;
+}
